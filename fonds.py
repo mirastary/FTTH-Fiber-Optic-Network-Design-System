@@ -391,10 +391,7 @@ class FiberOpticNetworkDesignSystem():
                                                    QgsField("Net Type", QVariant.String),
                                                    QgsField("R|FN", QVariant.String),
                                                    QgsField("Length", QVariant.String)])[0]
-
-
-                    self.startWorker(shafts_layer)
-
+                    
                     # work with new layers ---------------------------------------------------------------------------------
                     index_streets = QgsSpatialIndex()
                     features = ulice_layer.getFeatures()
